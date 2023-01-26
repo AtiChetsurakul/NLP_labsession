@@ -5,7 +5,7 @@ import copy
 import torch.nn as nn
 
 
-def train_model(model, dataloaders, criterion, device, optimizer, num_epochs=5, weights_name='weight_save', is_inception=False,):
+def train_model(model, dataloaders, criterion, device, optimizer, num_epochs=5, weights_name='weight_save', is_inception=False):
     '''
     train_model function
     Train a PyTorch model for a given number of epochs.
