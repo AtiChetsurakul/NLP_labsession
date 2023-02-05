@@ -7,7 +7,7 @@ from spacy.lang.en.stop_words import STOP_WORDS
 
 
 nlp = spacy.load('en_core_web_md')
-skill_path = "static/skills.jsonl"
+skill_path = "static/edu_skill.jsonl"
 
 ruler = nlp.add_pipe("entity_ruler")
 ruler.from_disk(skill_path)
@@ -29,19 +29,23 @@ def preprocessing(sentence):
     return " ".join(cleaned_tokens)
 
 
-def to_read(cv_path, page=0):
+def to_read(cv_path, page=5):
     reader = PdfReader(cv_path)
-    page = reader.pages[0]
+    page = reader.pages[page]
     text = page.extract_text()
     text = preprocessing(text)
     doc = nlp(text)
 
     skills = []
+    education = []
 
     for ent in doc.ents:
+        # all_lab.append(ent.label_)
         if ent.label_ == 'SKILL':
             skills.append(ent.text)
-    return skills
+        if ent.label_ == 'EDUCATION':
+            education.append(ent.text)
+    return skills, education
 
     # colors = {"SKILL": "linear-gradient(90deg, #aa9cfc, #fc9ce7)"}
     # options = {"colors": colors}

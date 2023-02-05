@@ -1,0 +1,64 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+
+<!-- 
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+
+        <h2>HomeWork NO. 3 Resume stealer</h2> -->
+
+<section
+    class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+    <div class="content">
+        <h1> Skill</h1>
+        <p>{{ret}}</p>
+        <h2> EDUCATION</h2>
+        <p>{{eddu}}</p>
+        <h1>To Download</h1>
+        <p class="major">Paid me 60 primogem for Gold member to perform download UID: SOME ID</p>
+
+    </div>
+    <div class="image">
+        <img src="{{url_for('static',filename = 'images/francis2.png')}}" alt="" />
+    </div>
+</section>
+
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+    id="first">
+    <div class="content">
+        <h2>Kidding Here you can download a file</h2>
+        <ul class="actions stacked">
+            <li><a href="{{url_for('download_csv')}}" class="button big wide smooth-scroll-middle"> Free download </a>
+            </li>
+
+    </div>
+    <div class="image">
+        <img src="{{url_for('static',filename = 'images/sca.png')}}" alt="" />
+    </div>
+</section>
+
+<!-- 
+/Users/atichetsurakul/Desktop/JAN23/nlp123clone/NLP_labsession/Hw3/Flask_webapp/static/images/francis.png -->
+
+
+<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
+            amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p> -->
+<!-- <ul class=" actions stacked">
+
+        <li><a href="#" class="button">Learn More</a></li>
+
+        </ul>
+    </div> -->
+<!-- 
+        <div class="image">
+            <img src="static/images/spotlight01.jpg" alt="" />
+        </div> -->
+<!-- </section> -->
+
+
+{% include "footer.html" %}
+{%endblock %}
