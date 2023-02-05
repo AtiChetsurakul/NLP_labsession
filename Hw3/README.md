@@ -1,6 +1,6 @@
 ## To use
 
-### You need to find different template since It quite illigal to direct use from me.
+### You need to find different template.
 - ####  Atleast visit `HTML5UP` website
 
 #### you can find tutorial on how to run flask app on `flask Doc`.
