@@ -29,4 +29,6 @@ class LoginForm(FlaskForm):
 
 class PdfForm(FlaskForm):
     pdff_ = FileField(validators=[FileRequired()])
+    page = SelectField('Page', choices=[(
+        1, '1'), (2, '2'), (3, '3'), (5, '5'), (0, '0, for more subscrib for a premium to access all page stealing')])
     submit = SubmitField("Submit file")

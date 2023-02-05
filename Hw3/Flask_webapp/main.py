@@ -44,22 +44,23 @@ def upload():
     form = PdfForm()
     if form.validate_on_submit():
         f = form.pdff_.data
+        page = int(form.page.data)
         filename = secure_filename(f.filename)
         # print(f)
         f.save(os.path.join(
             app.instance_path, filename
         ))
-        return redirect(url_for('result_table', file_name=filename))
+        return redirect(url_for('result_table', file_name=filename, page=page))
 
     return render_template('upload.html', form=form)
 
 
-@app.route('/stealing/<file_name>')
-def result_table(file_name):
+@app.route('/stealing/<file_name>/<int:page>')
+def result_table(file_name, page):
     path = os.path.join(app.instance_path, file_name)
     import data_stealer
 
-    skill, edu = data_stealer.to_read(path, page=5)
+    skill, edu = data_stealer.to_read(path, page=page)
     os.remove(path)
     return render_template('stealed.html', ret=' '.join(skill), eddu=' '.join(edu))
     pass
