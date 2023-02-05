@@ -15,7 +15,7 @@
 
 ## If you dont want to use a doc
 
-then `pip install -r requirement.txt`
-then on bash -> $ `export FLASK_APP = main`
-then $`flask run`
+- First, `pip install -r requirement.txt`
+- then on bash -> $ `export FLASK_APP = main`
+- then $`flask run`
 ### But u still need to download your own template
