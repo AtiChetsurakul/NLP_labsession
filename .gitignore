@@ -4,5 +4,5 @@
 *.txt
 !requirements.txt
 *.conll
-
+!.csv
 *.weights
