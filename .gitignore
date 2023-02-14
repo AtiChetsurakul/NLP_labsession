@@ -6,3 +6,4 @@
 *.conll
 !.csv
 *.weights
+*.vec
