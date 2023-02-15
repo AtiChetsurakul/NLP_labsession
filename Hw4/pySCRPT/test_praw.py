@@ -15,5 +15,5 @@ if __name__ == '__main__':
 
     subreddit = reddit.subreddit('apple')
     topics = [*subreddit.top(limit=50)]  # top posts all time
-    print(len(topics))
+    # print(len(topics))
     fifty_sen = title = [n.title for n in topics]
