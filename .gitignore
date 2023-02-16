@@ -8,5 +8,4 @@
 *.weights
 *.vec
 secKey.py
-
-!'TRFThwHCjKLaerVUOjyfvA','P70GQxwMcJzwkhwf4tUj0ZcDoWWucA','ati'
+*.pyc
