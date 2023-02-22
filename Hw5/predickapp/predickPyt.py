@@ -4,8 +4,8 @@ import torch.nn as nn
 from spacy.lang.en.stop_words import STOP_WORDS
 import spacy
 import pickle
-from predickModule import LSTMLanguageModel
-from dickUtil import generate
+from predickapp.predickModule import LSTMLanguageModel
+from predickapp.dickUtil import generate
 tokenizer = get_tokenizer('spacy', language='en_core_web_sm')
 nlp = spacy.load('en_core_web_md')
 with open('vocab.pickle', 'rb') as handle:
