@@ -32,6 +32,27 @@
 |               |                 
 
 
+------------------------
+
+# Week 3 paper
+
+
+
+| Paper           | [2] Elron, Liat                                                                                                                                                                                                                      |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| main_point      | Adding quality controlled parameter, paraphrase model, QCPG, can control the quality of the result.                                                                                                                                  |
+| - Problem       | Diversity of paraphrase result                                                                                                                                                                                                       |
+| - Prev work     | For this topic - need to provided a specific info model with it parse tree( Iyyer, 2018) - or provide specific keyword                                                                                                               |
+| - New approch   | - New Architecture with quality vector input -> then feeding to normal encoder and decoder model. - Quality vector including semetic, synthetic, lexical. - then train with COCO caption ( they have more than 1 caption per image)  |
+| - Justification | Out perform in automatic evaluation and from human evaluation.                                                                                                                                                                       |
+| Future work     | exploring method such as Reenforcement LR > improve satisfy the quality req.                                                                                                                                                         |
+You can now import Markdown table code directly using File/Paste table data... dialog.
+
+
+
+
+---------------------------
+
 
 
 -----------------------
@@ -44,3 +65,5 @@
     - [0] Amanul Haque, Vaibhav Garg, Hui Guo, and Munindar Singh. 2022. Pixie: Preference in Implicit and Explicit Comparisons. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers), pages 106–112, Dublin, Ireland. Association for Computational Linguistics.
 
     - [1] Bin Liang, Qinglin Zhu, Xiang Li, Min Yang, Lin Gui, Yulan He, and Ruifeng Xu. 2022. JointCL: A Joint Contrastive Learning Framework for Zero-Shot Stance Detection. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 81–91, Dublin, Ireland. Association for Computational Linguistics.
+    
+    - [2] Elron Bandel, Ranit Aharonov, Michal Shmueli-Scheuer, Ilya Shnayderman, Noam Slonim, and Liat Ein-Dor. 2022. Quality Controlled Paraphrase Generation. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 596–609, Dublin, Ireland. Association for Computational Linguistics.
