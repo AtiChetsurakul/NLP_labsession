@@ -7,8 +7,10 @@
 *.txt
 !requirements.txt
 *.conll
-!.csv
+# !.csv
 *.weights
 *.vec
 secKey.py
 *.pyc
+*.csv
+*.zip
