@@ -368,6 +368,8 @@ Cell In[92], line 79, in Decoder.decode(self, src, src_len, trg, method)
 UnboundLocalError: local variable 'hidden' referenced before assignment
 ```
 
+- #### Greedy Search
+
 ``` py
 model.decode('import',3,'import <><><><><>','กรี้ดดี้เสิด')
 
